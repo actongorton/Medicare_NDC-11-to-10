@@ -8,7 +8,7 @@ public class convert {
 
     public static void main(String[] args) throws IOException {
 
-        String theFile = "/Volumes/Media/Dropbox/PhD/Evidence Based Discovery/Medicare Data/drugs.csv";
+        String theFile = "drugs.csv";
         BufferedReader br = new BufferedReader(new FileReader(theFile));
 
         String line;
@@ -88,7 +88,7 @@ public class convert {
 
     public static void WriteFile(String line, String ndc_code) throws IOException {
 
-        Writer wr = new FileWriter("/Volumes/Media/Dropbox/PhD/Evidence Based Discovery/Medicare Data/drug_crosswalk.csv", true);
+        Writer wr = new FileWriter("drug_crosswalk.csv", true);
         wr.write(line + "|" + ndc_code + "\n");
         wr.close();
 
